@@ -1,0 +1,27 @@
+#container {
+}
+
+#left {
+  position: fixed;
+  left: 0;
+  width: 292px;
+  padding-left: 8px;
+  padding-right: 8px;
+  top: 0;
+  bottom: 0;
+  background-color: var(--background-1);
+  overflow-y: auto;
+  padding-bottom: 32px;
+}
+
+#right {
+  position: fixed;
+  padding-left: 8px;
+  left: 308px;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  padding-bottom: 32px;
+  padding-right: 16px;
+}

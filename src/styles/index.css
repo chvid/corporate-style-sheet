@@ -1,0 +1,42 @@
+@import "form.css";
+@import "table.css";
+@import "navigation.css";
+@import "layout.css";
+@import "modal.css";
+
+:root {
+  --color-a: #ff595e;
+  --color-b: #ffca3a;
+  --color-c: #8ac926;
+  --color-d: #1982c4;
+  --color-e: #6a4c93;
+
+  --color-divider: #ced4da;
+
+  --background-1: #f8f8f8;
+  --background-2: #f0f0f0;
+  --background-3: #e8e8e8;
+
+  /*
+  --main-font: Verdana;
+  --monospaced-font: Consolas, monospace;
+  */
+
+  --main-font: Verdana, sans-serif;
+  --monospaced-font: Consolas, monospace;
+  /*
+    font-family: -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-family: Poppins;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+*/
+}
+
+:root,
+input,
+textarea,
+select,
+button {
+  font-size: 14px;
+  font-family: var(--main-font);
+  font-weight: 400;
+}

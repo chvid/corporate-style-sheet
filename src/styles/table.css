@@ -1,0 +1,37 @@
+table {
+  font-family: var(--monospaced-font);
+  width: 100%;
+  border-spacing: 0;
+}
+
+thead > tr > th {
+  border-bottom: 1px solid var(--color-divider);
+  padding: 4px 64px 4px 16px;
+  text-align: left;
+  font-family: var(--main-font);
+  font-weight: 900;
+}
+
+tbody > tr > td {
+  border-top: 4px solid white;
+}
+
+tbody > tr > td {
+  padding: 4px 16px;
+}
+
+td.right {
+  text-align: right;
+}
+
+tr:not(:last-child) > td {
+  border-bottom: 1px solid var(--background-2);
+}
+
+td:not(:first-child) {
+  border-left: 1px solid var(--background-2);
+}
+
+th:not(:first-child) {
+  border-left: 1px solid var(--background-2);
+}

@@ -1,0 +1,32 @@
+.modal {
+  z-index: 99;
+  background-color: #e8e8e8aa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.dialog {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 500px;
+  border: 1px solid var(--color-divider);
+  height: 400px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px #e8e8e8;
+}
+
+.dialog > .header {
+  padding: 8px 16px;
+  background-color: var(--color-d);
+  color: white;
+  font-weight: bold;
+}
+
+.dialog > .content {
+  padding: 8px 16px;
+}

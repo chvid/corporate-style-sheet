@@ -1,0 +1,78 @@
+/* Tabs */
+
+/*
+nav > ul {
+  display: block;
+  list-style-type: none;
+  text-indent: 0;
+  padding: 0;
+  height: 20px;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+nav > ul > li {
+  display: inline;
+  padding: 4px 32px;
+  margin: 0 8px;
+  border-top: 1px solid var(--color-divider);
+  border-left: 1px solid var(--color-divider);
+  border-right: 1px solid var(--color-divider);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+nav > ul > li.selected {
+  background-color: white;
+}
+
+nav > ul > li {
+  background-color: var(--background-2);
+}
+*/
+
+nav.tabs ul {
+  display: block;
+  list-style-type: none;
+  text-indent: 0;
+  padding: 0;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+nav.tabs ul > li {
+  display: inline-block;
+  padding: 4px 32px;
+  margin: 0 8px;
+}
+
+nav.tabs ul > li.selected {
+  border-bottom: 2px solid var(--color-d);
+}
+
+/* Menu */
+
+nav.menu ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+
+nav.menu ul > ul {
+  padding: 0 0 0 32px !important;
+}
+
+nav.menu ul > li {
+  display: list-item;
+  list-style-type: none;
+  padding: 8px 16px;
+  margin: 4px 0;
+  cursor: pointer;
+}
+
+nav.menu ul > li.selected {
+  color: white;
+  background-color: var(--color-d) !important;
+}
+
+nav.menu ul > li:hover {
+  background-color: var(--background-3);
+}
