@@ -45,7 +45,5 @@ export const FocusTrap: React.FC<PropsWithChildren> = ({ children }) => {
       }
     };
   }, []);
-  return (
-    <div ref={elementRef}>{children}</div>
-  );
+  return <div ref={elementRef}>{children}</div>;
 };
