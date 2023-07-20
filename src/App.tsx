@@ -16,7 +16,7 @@ const App = () => {
               <li>Bar Bar Bar</li>
               <ul>
                 <li>Booz Baz</li>
-                <li className="selected">Jazz Koooloomba</li>
+                <li className="active">Jazz Koooloomba</li>
               </ul>
               <li>Foo</li>
             </ul>
@@ -29,7 +29,7 @@ const App = () => {
           <h2>Tabs</h2>
           <nav className="tabs">
             <ul>
-              <li className="selected">Tab 1</li>
+              <li className="active">Tab 1</li>
               <li>Tab 2</li>
               <li>Tab 3</li>
             </ul>

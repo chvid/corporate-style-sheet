@@ -41,15 +41,8 @@ select {
   background-size: 10px auto;
 }
 
-button {
-  border-radius: 4px;
-  border: 0;
-  background-color: var(--color-d);
-  color: white;
-}
-
 fieldset {
-  border: 1px solid var(--color-divider);
+  border: var(--default-border);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -71,6 +64,8 @@ textarea {
   border: 1px solid var(--color-divider);
 }
 
+/* Search field */
+
 div.search-result {
   position: fixed;
   border: 1px solid var(--color-divider);
@@ -84,26 +79,58 @@ div.search-result-item {
   padding: 4px 12px;
   font-size: 12px;
   cursor: pointer;
+  background-color: var(--transparent-bg-color);
 }
 
 div.search-result-item:hover {
-  background-color: var(--background-1);
+  background-color: var(--transparent-bg-color-hover);
 }
 
-.is-link {
-  background-color: white;
-  color: black;
-  text-decoration: underline;
+div.search-result-item:active {
+  background-color: var(--transparent-bg-color-active);
 }
 
-.is-secondary {
-  background-color: var(--color-c);
-  color: white;
+/* Button */
+
+button {
+  border-radius: 4px;
+  border: 0;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-fg-color);
 }
 
 button:hover {
-  box-shadow: 0 0 2px grey;
+  background-color: var(--primary-bg-color-hover);
 }
+
 button:active {
-  box-shadow: 0 0 2px black;
+  background-color: var(--primary-bg-color-active);
 }
+
+button.is-link {
+  background-color: var(--transparent-bg-color);
+  color: var(--transparent-fg-color);
+  text-decoration: underline;
+}
+
+button.is-link:hover {
+  background-color: var(--transparent-bg-color-hover);
+}
+
+button.is-link:active {
+  background-color: var(--transparent-bg-color-active);
+}
+
+button.is-secondary {
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-fg-color);
+}
+
+button.is-secondary:hover {
+  background-color: var(--secondary-bg-color-hover);
+}
+
+button.is-secondary:active {
+  background-color: var(--secondary-bg-color-active);
+}
+

@@ -1,35 +1,5 @@
 /* Tabs */
 
-/*
-nav > ul {
-  display: block;
-  list-style-type: none;
-  text-indent: 0;
-  padding: 0;
-  height: 20px;
-  border-bottom: 1px solid var(--color-divider);
-}
-
-nav > ul > li {
-  display: inline;
-  padding: 4px 32px;
-  margin: 0 8px;
-  border-top: 1px solid var(--color-divider);
-  border-left: 1px solid var(--color-divider);
-  border-right: 1px solid var(--color-divider);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-
-nav > ul > li.selected {
-  background-color: white;
-}
-
-nav > ul > li {
-  background-color: var(--background-2);
-}
-*/
-
 nav.tabs ul {
   display: block;
   list-style-type: none;
@@ -42,10 +12,22 @@ nav.tabs ul > li {
   display: inline-block;
   padding: 4px 32px;
   margin: 0 8px;
+  color: var(--transparent-fg-color);
+  background-color: var(--transparent-bg-color);
+  border-bottom: 2px solid var(--transparent-bg-color);
+  cursor: pointer;
 }
 
-nav.tabs ul > li.selected {
-  border-bottom: 2px solid var(--color-d);
+nav.tabs ul > li:hover {
+  background-color: var(--transparent-bg-color-hover);
+}
+
+nav.tabs ul > li:active {
+  background-color: var(--transparent-bg-color-active);
+}
+
+nav.tabs ul > li.active {
+  border-bottom: 2px solid var(--primary-bg-color);
 }
 
 /* Menu */
@@ -66,13 +48,27 @@ nav.menu ul > li {
   padding: 8px 16px;
   margin: 4px 0;
   cursor: pointer;
+  color: var(--transparent-fg-color);
+  background-color: var(--transparent-bg-color);
 }
 
-nav.menu ul > li.selected {
-  color: white;
-  background-color: var(--color-d) !important;
+nav.menu ul > li.active {
+  color: var(--primary-fg-color);
+  background-color: var(--primary-bg-color);
+}
+
+nav.menu ul > li.active:hover {
+  background-color: var(--primary-bg-color-hover);
+}
+
+nav.menu ul > li.active:active {
+  background-color: var(--primary-bg-color-active);
 }
 
 nav.menu ul > li:hover {
-  background-color: var(--background-3);
+  background-color: var(--transparent-bg-color-hover);
+}
+
+nav.menu ul > li:active {
+  background-color: var(--transparent-bg-color-active);
 }

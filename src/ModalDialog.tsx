@@ -20,6 +20,7 @@ export const ModalDialog: React.FC<{ visible: boolean; onClose: () => void }> = 
                   </label>
                   <div className="row">
                     <button onClick={() => onClose()}>OK</button>
+                    <button onClick={() => onClose()} className="is-secondary">Maybe</button>
                     <button onClick={() => onClose()} className="is-link">
                       Cancel
                     </button>

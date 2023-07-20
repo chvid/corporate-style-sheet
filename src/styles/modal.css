@@ -17,13 +17,13 @@
   height: 400px;
   background-color: white;
   border-radius: 4px;
-  box-shadow: 2px 2px 2px #e8e8e8;
+  box-shadow: 0 0 4px var(--color-divider);
 }
 
 .dialog > .header {
   padding: 8px 16px;
-  background-color: var(--color-d);
-  color: white;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-fg-color);
   font-weight: bold;
 }
 
