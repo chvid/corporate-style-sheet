@@ -26,8 +26,8 @@ label {
 input,
 button,
 select {
-  padding: 8px 16px;
-  border: 1px solid var(--color-divider);
+  padding: var(--default-padding);
+  border: var(--default-border);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -59,16 +59,16 @@ fieldset > label {
 }
 
 textarea {
+  padding: var(--default-padding);
+  border: var(--default-border);
   border-radius: 4px;
-  padding: 8px 16px;
-  border: 1px solid var(--color-divider);
 }
 
 /* Search field */
 
 div.search-result {
+  border: var(--default-border);
   position: fixed;
-  border: 1px solid var(--color-divider);
   background-color: white;
   border-radius: 4px;
   padding: 4px;
@@ -76,10 +76,10 @@ div.search-result {
 }
 
 div.search-result-item {
+  background-color: var(--transparent-bg-color);
   padding: 4px 12px;
   font-size: 12px;
   cursor: pointer;
-  background-color: var(--transparent-bg-color);
 }
 
 div.search-result-item:hover {

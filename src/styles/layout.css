@@ -2,6 +2,7 @@
 }
 
 #left {
+  background-color: var(--background-1);
   position: fixed;
   left: 0;
   width: 292px;
@@ -9,7 +10,6 @@
   padding-right: 8px;
   top: 0;
   bottom: 0;
-  background-color: var(--background-1);
   overflow-y: auto;
   padding-bottom: 32px;
 }

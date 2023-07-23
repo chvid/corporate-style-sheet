@@ -9,24 +9,24 @@
 }
 
 .dialog {
+  box-shadow: 0 0 4px var(--color-divider);
+  border: var(--default-border);
+  background-color: white;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
   width: 500px;
-  border: 1px solid var(--color-divider);
   height: 400px;
-  background-color: white;
   border-radius: 4px;
-  box-shadow: 0 0 4px var(--color-divider);
 }
 
 .dialog > .header {
-  padding: 8px 16px;
+  padding: var(--default-padding);
   background-color: var(--primary-bg-color);
   color: var(--primary-fg-color);
   font-weight: bold;
 }
 
 .dialog > .content {
-  padding: 8px 16px;
+  padding: var(--default-padding);
 }

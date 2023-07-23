@@ -1,20 +1,20 @@
 /* Tabs */
 
 nav.tabs ul {
+  border-bottom: var(--default-border);
   display: block;
   list-style-type: none;
   text-indent: 0;
   padding: 0;
-  border-bottom: 1px solid var(--color-divider);
 }
 
 nav.tabs ul > li {
+  border-bottom: 2px solid var(--transparent-bg-color);
+  color: var(--transparent-fg-color);
+  background-color: var(--transparent-bg-color);
   display: inline-block;
   padding: 4px 32px;
   margin: 0 8px;
-  color: var(--transparent-fg-color);
-  background-color: var(--transparent-bg-color);
-  border-bottom: 2px solid var(--transparent-bg-color);
   cursor: pointer;
 }
 
@@ -43,13 +43,13 @@ nav.menu ul > ul {
 }
 
 nav.menu ul > li {
-  display: list-item;
-  list-style-type: none;
-  padding: 8px 16px;
-  margin: 4px 0;
-  cursor: pointer;
+  padding: var(--default-padding);
   color: var(--transparent-fg-color);
   background-color: var(--transparent-bg-color);
+  display: list-item;
+  list-style-type: none;
+  margin: 4px 0;
+  cursor: pointer;
 }
 
 nav.menu ul > li.active {

@@ -34,6 +34,13 @@
   --transparent-bg-color: #ffffff00;
   --transparent-bg-color-hover: color-mix(in srgb, var(--transparent-bg-color) 90%, black);
   --transparent-bg-color-active: color-mix(in srgb, var(--transparent-bg-color) 80%, black);
+
+  --default-border: 1px solid var(--color-divider);
+  --default-border-light: 1px solid color-mix(in srgb, var(--color-divider) 30%, white);
+  --default-border-dark: 1px solid color-mix(in srgb, var(--color-divider) 80%, black);
+
+  --default-border: 1px solid var(--color-divider);
+  --default-padding: 8px 16px;
  }
 
 :root,
@@ -41,7 +48,7 @@ input,
 textarea,
 select,
 button {
-  font-size: 14px;
   font-family: var(--main-font);
+  font-size: 14px;
   font-weight: 400;
 }
