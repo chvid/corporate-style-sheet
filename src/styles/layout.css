@@ -6,12 +6,10 @@
   position: fixed;
   left: 0;
   width: 292px;
-  padding-left: 8px;
-  padding-right: 8px;
   top: 0;
   bottom: 0;
   overflow-y: auto;
-  padding-bottom: 32px;
+  padding: 8px 8px 32px 8px;
 }
 
 #right {
@@ -22,6 +20,5 @@
   top: 0;
   bottom: 0;
   overflow-y: auto;
-  padding-bottom: 32px;
-  padding-right: 16px;
+  padding: 8px 8px 32px 8px;
 }

@@ -32,10 +32,16 @@ nav.tabs ul > li.active {
 
 /* Menu */
 
+nav.menu {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 nav.menu ul {
   display: block;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 nav.menu ul > ul {
@@ -48,7 +54,7 @@ nav.menu ul > li {
   background-color: var(--transparent-bg-color);
   display: list-item;
   list-style-type: none;
-  margin: 4px 0;
+  margin: 0;
   cursor: pointer;
 }
 

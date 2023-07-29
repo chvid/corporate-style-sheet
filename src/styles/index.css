@@ -3,6 +3,7 @@
 @import "navigation.css";
 @import "layout.css";
 @import "modal.css";
+@import "shadows.css";
 
 :root {
   --color-a: #ff595e;
@@ -41,7 +42,7 @@
 
   --default-border: 1px solid var(--color-divider);
   --default-padding: 8px 16px;
- }
+}
 
 :root,
 input,
@@ -51,4 +52,17 @@ button {
   font-family: var(--main-font);
   font-size: 14px;
   font-weight: 400;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  float: left;
+  margin-right: 8px;
+  margin-top: -4px;
+}
+
+.icon.right {
+  float: right;
+  margin-right: -8px;
 }

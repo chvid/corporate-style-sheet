@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { ModalDialog } from "./ModalDialog";
 import { SearchField } from "./SearchField";
+import { NavigationMenu } from "./components/NavigationMenu";
+import icons from "./icons/IconCollections";
 
+console.log(icons);
 const App = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   return (
@@ -9,18 +12,7 @@ const App = () => {
       <ModalDialog visible={isDialogOpen} onClose={() => setIsDialogOpen(false)} />
       <div id="container">
         <div id="left">
-          <nav className="menu">
-            <ul>
-              <li>Foo Woobaloo</li>
-              <li>Bar Baz</li>
-              <li>Bar Bar Bar</li>
-              <ul>
-                <li>Booz Baz</li>
-                <li className="active">Jazz Koooloomba</li>
-              </ul>
-              <li>Foo</li>
-            </ul>
-          </nav>
+          <NavigationMenu />
         </div>
         <div id="right">
           <h1>Test Page</h1>
