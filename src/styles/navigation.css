@@ -49,7 +49,7 @@ nav.menu ul > ul {
 }
 
 nav.menu ul > li {
-  padding: var(--default-padding);
+  padding: 8px 16px;
   color: var(--transparent-fg-color);
   background-color: var(--transparent-bg-color);
   display: list-item;

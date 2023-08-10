@@ -1,24 +1,45 @@
-#container {
+:root {
+  --top-pane-height: 48px;
+  --left-pane-width: 300px;
+  --vertical-margin: 16px;
+  --horizontal-margin: 16px;
+}
+
+.container {
+  padding: var(--vertical-margin) var(--horizontal-margin);
+}
+
+.menu-container {
+  padding: var(--vertical-margin) 0;
+}
+
+#top {
+  background-color: var(--background-2);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: var(--top-pane-height);
+  border-bottom: var(--default-border);
+  z-index: 1;
 }
 
 #left {
   background-color: var(--background-1);
   position: fixed;
   left: 0;
-  width: 292px;
-  top: 0;
+  width: var(--left-pane-width);
+  top: var(--top-pane-height);
   bottom: 0;
   overflow-y: auto;
-  padding: 8px 8px 32px 8px;
 }
 
 #right {
+  border-left: var(--default-border);
   position: fixed;
-  padding-left: 8px;
-  left: 308px;
-  right: 0px;
-  top: 0;
+  left: var(--left-pane-width);
+  right: 0;
+  top: var(--top-pane-height);
   bottom: 0;
   overflow-y: auto;
-  padding: 8px 8px 32px 8px;
 }

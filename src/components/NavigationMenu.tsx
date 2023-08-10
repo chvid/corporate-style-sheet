@@ -83,7 +83,7 @@ const NavigationElement: React.FC<{ element: NavigationItem }> = ({ element }) =
         {element.label}
         {element.children && (isOpen ? <icons.ChevronDown float="right" /> : <icons.ChevronRight float="right" />)}
       </li>
-      {element.children && isOpen && element.children.map(c => <NavigationElement element={c} />)}
+      {element.children && isOpen && element.children.map((c, i) => <NavigationElement element={c} key={i} />)}
     </ul>
   );
 };
@@ -91,8 +91,8 @@ const NavigationElement: React.FC<{ element: NavigationItem }> = ({ element }) =
 export const NavigationMenu = () => {
   return (
     <nav className="menu">
-      {navigation.map(e => (
-        <NavigationElement element={e} />
+      {navigation.map((e, i) => (
+        <NavigationElement element={e} key={i} />
       ))}
     </nav>
   );
