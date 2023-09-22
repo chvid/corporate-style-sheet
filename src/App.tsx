@@ -94,7 +94,7 @@ const App = () => {
                   <option>Tomato</option>
                 </select>
               </label>
-              <label>
+              <div className="label">
                 Field drone
                 <fieldset>
                   <label>
@@ -110,8 +110,8 @@ const App = () => {
                     Louie
                   </label>
                 </fieldset>
-              </label>
-              <label>
+              </div>
+              <div className="label">
                 Terms and Conditions
                 <fieldset>
                   <label>
@@ -127,7 +127,7 @@ const App = () => {
                     Return Commision
                   </label>
                 </fieldset>
-              </label>
+              </div>
               <label>
                 Some comments
                 <textarea cols={60} rows={20}></textarea>

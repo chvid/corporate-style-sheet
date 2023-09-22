@@ -1,0 +1,69 @@
+div.date-picker {
+  border: var(--default-border);
+  position: fixed;
+  background-color: white;
+  border-radius: 4px;
+  padding: 4px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  user-select: none;
+}
+
+div.date-picker .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #888;
+}
+
+div.date-picker .header-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: bold;
+  color: black;
+}
+
+div.date-picker .header-row .control {
+  cursor: pointer;
+}
+
+div.date-picker .week-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: black;
+}
+
+div.date-picker .week-row div {
+  display: block;
+  width: 32px;
+  text-align: center;
+  padding: 4px;
+}
+
+div.date-picker .item {
+  display: block;
+  width: 32px;
+  text-align: center;
+  cursor: pointer;
+  padding: 4px;
+}
+
+div.date-picker .current-month {
+  color: black;
+}
+
+div.date-picker .selected {
+  font-weight:bold;
+}
+
+div.date-picker .item:hover {
+  background-color: var(--transparent-bg-color-hover);
+}
+
+div.date-picker .item:active {
+  background-color: var(--transparent-bg-color-active);
+}

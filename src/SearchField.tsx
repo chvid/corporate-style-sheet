@@ -2,8 +2,8 @@ import { useRef, useState } from "react";
 import { useAnchoredStyle } from "./hooks/useAnchoredStyle";
 
 const data = [
-  { value: 42, label: "Brigtworks ApS", description: "Østerbrogade 107A 3 2, København Ø 2100 DK" },
-  { value: 87, label: "Århus Suppekøkken A/S", description: "Gammel Torv 12, Århus V 8210" }
+  { value: "42", label: "Brigtworks ApS", description: "Østerbrogade 107A 3 2, København Ø 2100 DK" },
+  { value: "87", label: "Århus Suppekøkken A/S", description: "Gammel Torv 12, Århus V 8210" }
 ];
 
 export const SearchField: React.FC<{ placeholder: string; size: number }> = ({ placeholder, size }) => {
@@ -30,7 +30,7 @@ export const SearchField: React.FC<{ placeholder: string; size: number }> = ({ p
       {resultsVisible && (
         <div className="search-result" style={style}>
           {data.map((d, i) => (
-            <div className="search-result-item" key={i} onClick={() => setSearchString("foo")} tabIndex={-1}>
+            <div className="search-result-item" key={i} onClick={() => setSearchString(d.value)} tabIndex={-1}>
               <h4>{d.label}</h4>
               <p>{d.description}</p>
             </div>

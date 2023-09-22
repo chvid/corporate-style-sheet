@@ -1,0 +1,23 @@
+div.search-result {
+  border: var(--default-border);
+  position: fixed;
+  background-color: white;
+  border-radius: 4px;
+  padding: 4px;
+  min-width: 600px;
+}
+
+div.search-result-item {
+  background-color: var(--transparent-bg-color);
+  padding: 4px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+div.search-result-item:hover {
+  background-color: var(--transparent-bg-color-hover);
+}
+
+div.search-result-item:active {
+  background-color: var(--transparent-bg-color-active);
+}
