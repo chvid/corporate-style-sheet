@@ -9,7 +9,7 @@ thead > tr > th {
   border-bottom: var(--default-border);
   padding: var(--default-padding);
   font-family: var(--main-font);
-  font-weight: 900;
+  font-weight: bold;
   text-align: left;
 }
 
@@ -22,11 +22,15 @@ tr:not(:last-child) > td {
 }
 
 td:not(:first-child) {
-  border-left: var(--default-border-light);
+  border-left: var(--default-border);
 }
 
 th:not(:first-child) {
-  border-left: var(--default-border-light);
+  border-left: var(--default-border);
+}
+
+th:not(:first-child) {
+  border-left: var(--default-border);
 }
 
 td.right {

@@ -4,6 +4,7 @@
 @import "layout.css";
 @import "modal.css";
 @import "shadows.css";
+@import "typography.css";
 
 :root {
   --color-a: #ff595e;
@@ -14,9 +15,15 @@
 
   --color-divider: #ced4da;
 
+  --background-1: #f8fafc;
+  --background-2: #f0f3f5;
+  --background-3: #e8eaec;
+
+/*
   --background-1: #f8f8f8;
   --background-2: #f0f0f0;
   --background-3: #e8e8e8;
+*/
 
   --main-font: Verdana, sans-serif;
   --monospaced-font: Consolas, monospace;
@@ -33,8 +40,8 @@
 
   --transparent-fg-color: black;
   --transparent-bg-color: #ffffff00;
-  --transparent-bg-color-hover: color-mix(in srgb, var(--transparent-bg-color) 90%, black);
-  --transparent-bg-color-active: color-mix(in srgb, var(--transparent-bg-color) 80%, black);
+  --transparent-bg-color-hover: color-mix(in srgb, var(--transparent-bg-color) 90%, #1982c4);
+  --transparent-bg-color-active: color-mix(in srgb, var(--transparent-bg-color) 80%, #1982c4);
 
   --default-border: 1px solid var(--color-divider);
   --default-border-light: 1px solid color-mix(in srgb, var(--color-divider) 30%, white);

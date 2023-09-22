@@ -3,6 +3,7 @@ import { ModalDialog } from "./ModalDialog";
 import { SearchField } from "./SearchField";
 import { NavigationMenu } from "./components/NavigationMenu";
 import icons from "./icons/IconCollections";
+import { DatePicker } from "./DatePicker";
 
 const App = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -71,6 +72,10 @@ const App = () => {
               <label>
                 First thing
                 <input type="text" placeholder="First thing" size={40} />
+              </label>
+              <label>
+                Date thing
+                <DatePicker placeholder="Date thing" size={40} />
               </label>
               <div className="row">
                 <label>

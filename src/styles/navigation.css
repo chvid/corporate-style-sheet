@@ -6,6 +6,7 @@ nav.tabs ul {
   list-style-type: none;
   text-indent: 0;
   padding: 0;
+  user-select: none;
 }
 
 nav.tabs ul > li {
@@ -13,7 +14,7 @@ nav.tabs ul > li {
   color: var(--transparent-fg-color);
   background-color: var(--transparent-bg-color);
   display: inline-block;
-  padding: 4px 32px;
+  padding: 6px 32px 4px 32px;
   margin: 0 8px;
   cursor: pointer;
 }
