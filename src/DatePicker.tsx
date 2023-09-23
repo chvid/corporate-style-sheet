@@ -7,7 +7,12 @@ const isUnderClass = (element: any, className: string): boolean => (
   element != null && (element.className == className || isUnderClass(element.parentElement, className))
 )
 
-const calculateDates = (date: number) => {
+const calculateDates = (dateString: string) => {
+  let date = new Date(dateString).getTime();
+  if (isNaN(date)) {
+    date = new Date(new Date().toISOString().substring(0, 10)).getTime();
+  }
+
   const month = new Date(date).getMonth();
   const year = new Date(date).getFullYear();
   const startDate = new Date(date).setDate(1) - 7 * 24 * 3600 * 1000;
@@ -49,7 +54,7 @@ export const DatePicker: React.FC<{ placeholder: string; size: number }> = ({ pl
     top: anchor.getBoundingClientRect().bottom + 8
   }));
 
-  const di = calculateDates(new Date(dateString).getTime());
+  const di = calculateDates(dateString);
 
   return (
     <>

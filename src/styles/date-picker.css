@@ -3,7 +3,7 @@ div.date-picker {
   position: fixed;
   background-color: white;
   border-radius: 4px;
-  padding: 4px;
+  padding: 4px 8px;
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -28,6 +28,16 @@ div.date-picker .header-row {
 
 div.date-picker .header-row .control {
   cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+div.date-picker .header-row .control:hover {
+  background-color: var(--transparent-bg-color-hover);
+}
+
+div.date-picker .header-row .control:active {
+  background-color: var(--transparent-bg-color-active);
 }
 
 div.date-picker .week-row {
@@ -41,7 +51,7 @@ div.date-picker .week-row div {
   display: block;
   width: 32px;
   text-align: center;
-  padding: 4px;
+  padding: 4px 8px;
 }
 
 div.date-picker .item {
@@ -49,7 +59,8 @@ div.date-picker .item {
   width: 32px;
   text-align: center;
   cursor: pointer;
-  padding: 4px;
+  padding: 4px 8px;
+  border-radius: 4px;
 }
 
 div.date-picker .current-month {
@@ -57,7 +68,8 @@ div.date-picker .current-month {
 }
 
 div.date-picker .selected {
-  font-weight:bold;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-fg-color);
 }
 
 div.date-picker .item:hover {
@@ -66,4 +78,12 @@ div.date-picker .item:hover {
 
 div.date-picker .item:active {
   background-color: var(--transparent-bg-color-active);
+}
+
+div.date-picker .selected:hover {
+  background-color: var(--primary-bg-color-hover);
+}
+
+div.date-picker .selected:active {
+  background-color: var(--primary-bg-color-active);
 }
