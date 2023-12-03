@@ -57,6 +57,11 @@ nav.menu ul > li {
   list-style-type: none;
   margin: 0;
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
 }
 
 nav.menu ul > li.active {

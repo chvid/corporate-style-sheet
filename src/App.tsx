@@ -7,15 +7,32 @@ import { DatePicker } from "./DatePicker";
 
 const App = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [burgerMenuOpen, setBurgerMenuOpen] = useState(false);
   return (
     <>
       <ModalDialog visible={isDialogOpen} onClose={() => setIsDialogOpen(false)} />
       <div id="container">
         <div id="top">
-          <div className="container">
-            <icons.Rabbit fill="orange" float="left" />
+          <div className="flex-row">
+            <div id="small-device-burger">
+              {!burgerMenuOpen && (
+                <div className="action float-left" onClick={() => setBurgerMenuOpen(true)}>
+                  <icons.Burger />
+                </div>
+              )}
+              {burgerMenuOpen && (
+                <div className="action float-left" onClick={() => setBurgerMenuOpen(false)}>
+                  <icons.Close />
+                </div>
+              )}
+            </div>
+            <div className="action">
+              <icons.Rabbit fill="orange" />
+            </div>
             Brightworks ApS / Sales / Invoices
-            <icons.UserCog fill="HoneyDew" float="right" />
+            <div className="action flex-right">
+              <icons.UserCog fill="HoneyDew" float="right" />
+            </div>
           </div>
         </div>
         <div id="left">

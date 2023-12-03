@@ -104,6 +104,19 @@ const icons = {
       <path d="M22 8s-1.14 -2 -3 -2c-1.406 0 -3 2 -3 2s1.14 2 3 2s3 -2 3 -2z"></path>
       <path d="M16 2s-2 1.14 -2 3s2 3 2 3s2 -1.577 2 -3c0 -1.86 -2 -3 -2 -3z"></path>
     </>
+  ),
+  Burger: (
+    <>
+      <path d="M4 6l16 0" />
+      <path d="M4 12l16 0" />
+      <path d="M4 18l16 0" />
+    </>
+  ),
+  Close: (
+    <>
+      <path d="M18 6l-12 12" />
+      <path d="M6 6l12 12" />
+    </>
   )
 } satisfies Icons;
 

@@ -17,7 +17,8 @@ div.row {
   gap: 8px;
 }
 
-label, div.label {
+label,
+div.label {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -106,4 +107,37 @@ button.is-secondary:hover {
 
 button.is-secondary:active {
   background-color: var(--secondary-bg-color-active);
+}
+
+.action {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.action:hover {
+  background-color: var(--transparent-bg-color-hover);
+}
+
+.action:active {
+  background-color: var(--transparent-bg-color-active);
+}
+
+.action .icon {
+  float: unset;
+  margin-right: 0;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.flex-right {
+  order: 2;
+  margin-left: auto;
 }

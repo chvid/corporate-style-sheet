@@ -81,7 +81,7 @@ const NavigationElement: React.FC<{ element: NavigationItem }> = ({ element }) =
       <li onClick={() => element.children && setIsOpen(!isOpen)}>
         {element.icon}
         {element.label}
-        {element.children && (isOpen ? <icons.ChevronDown float="right" /> : <icons.ChevronRight float="right" />)}
+        <div className="flex-right">{element.children && (isOpen ? <icons.ChevronDown float="right" /> : <icons.ChevronRight float="right" />)}</div>
       </li>
       {element.children && isOpen && element.children.map((c, i) => <NavigationElement element={c} key={i} />)}
     </ul>
