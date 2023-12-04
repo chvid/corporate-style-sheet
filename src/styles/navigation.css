@@ -46,7 +46,7 @@ nav.menu ul {
 }
 
 nav.menu ul > ul {
-  padding: 0 0 0 32px !important;
+  padding: 0 0 0 36px !important;
 }
 
 nav.menu ul > li {
@@ -61,7 +61,7 @@ nav.menu ul > li {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: 8px;
+  gap: 12px;
 }
 
 nav.menu ul > li.active {

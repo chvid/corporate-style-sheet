@@ -7,21 +7,21 @@ import { DatePicker } from "./DatePicker";
 
 const App = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const [burgerMenuOpen, setBurgerMenuOpen] = useState(false);
+  const [isLeftVisible, setIsLeftVisible] = useState(false);
   return (
     <>
       <ModalDialog visible={isDialogOpen} onClose={() => setIsDialogOpen(false)} />
-      <div id="container">
+      <div className={isLeftVisible ? "left-visible" : "left-invisible"}>
         <div id="top">
-          <div className="flex-row">
-            <div id="small-device-burger">
-              {!burgerMenuOpen && (
-                <div className="action float-left" onClick={() => setBurgerMenuOpen(true)}>
+          <div className="container">
+            <div id="left-toggler">
+              {!isLeftVisible && (
+                <div className="action float-left" onClick={() => setIsLeftVisible(true)}>
                   <icons.Burger />
                 </div>
               )}
-              {burgerMenuOpen && (
-                <div className="action float-left" onClick={() => setBurgerMenuOpen(false)}>
+              {isLeftVisible && (
+                <div className="action float-left" onClick={() => setIsLeftVisible(false)}>
                   <icons.Close />
                 </div>
               )}
@@ -36,7 +36,7 @@ const App = () => {
           </div>
         </div>
         <div id="left">
-          <div className="menu-container">
+          <div className="container">
             <NavigationMenu />
           </div>
         </div>
