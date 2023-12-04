@@ -31,7 +31,7 @@ const App = () => {
             </div>
             Brightworks ApS / Sales / Invoices
             <div className="action flex-right">
-              <icons.UserCog fill="HoneyDew" float="right" />
+              <icons.UserCog fill="HoneyDew" />
             </div>
           </div>
         </div>
