@@ -79,7 +79,7 @@
     overflow-y: auto;
   }
 
-  .left-visible #left {
+  .left-visible > #left {
     background-color: white;
     position: fixed;
     left: 0;
@@ -89,7 +89,7 @@
     overflow-y: auto;
   }
 
-  .left-visible #right {
+  .left-visible > #right {
     border-left: var(--default-border);
     position: fixed;
     left: var(--left-pane-width);

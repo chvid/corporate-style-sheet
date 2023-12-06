@@ -11,12 +11,12 @@ type NavigationItem = {
 const navigation: NavigationItem[] = [
   {
     label: "Dashboard",
-    icon: <icons.Dashboard float="left" />,
+    icon: <icons.Dashboard />,
     link: `~/dashboard`
   },
   {
     label: "Sales",
-    icon: <icons.TransferIn float="left" />,
+    icon: <icons.TransferIn />,
     children: [
       { label: "Invoices", link: `~/sales/invoices` },
       { label: "Customers", link: `~/sales/customers` },
@@ -25,7 +25,7 @@ const navigation: NavigationItem[] = [
   },
   {
     label: "Purchases",
-    icon: <icons.TransferOut float="left" />,
+    icon: <icons.TransferOut />,
     children: [
       { label: "Bills", link: `~/purchases/bills` },
       { label: "Vendors", link: `~/purchases/vendors` },
@@ -34,7 +34,7 @@ const navigation: NavigationItem[] = [
   },
   {
     label: "Banking",
-    icon: <icons.BuildingBank float="left" />,
+    icon: <icons.BuildingBank />,
     children: [
       { label: "Bank Accounts", link: `~/banking/accounts` },
       { label: "Bank Statements", link: `~/banking/statements` }
@@ -42,7 +42,7 @@ const navigation: NavigationItem[] = [
   },
   {
     label: "Accounting",
-    icon: <icons.Scale float="left" />,
+    icon: <icons.Scale />,
     children: [
       { label: "Transactions", link: `~/accounting/transactions` },
       { label: "Accounts", link: `~/accounting/accounts` },
@@ -51,22 +51,22 @@ const navigation: NavigationItem[] = [
   },
   {
     label: "Sales Tax",
-    icon: <icons.CloudDollar float="left" />,
+    icon: <icons.CloudDollar />,
     link: `~/sales-tax`
   },
   {
     label: "Salary",
-    icon: <icons.UserDollar float="left" />,
+    icon: <icons.UserDollar />,
     link: `~/salary`
   },
   {
     label: "Reports",
-    icon: <icons.ChartArea float="left" />,
+    icon: <icons.ChartArea />,
     link: `~/reports`
   },
   {
     label: "Settings",
-    icon: <icons.Settings float="left" />,
+    icon: <icons.Settings />,
     children: [
       { label: "Companies", link: `~/settings/companies` },
       { label: "Create New Company", link: `~/settings/create-new-company` }
@@ -81,7 +81,7 @@ const NavigationElement: React.FC<{ element: NavigationItem }> = ({ element }) =
       <li onClick={() => element.children && setIsOpen(!isOpen)}>
         {element.icon}
         {element.label}
-        <div className="flex-right">{element.children && (isOpen ? <icons.ChevronDown float="right" /> : <icons.ChevronRight float="right" />)}</div>
+        <div className="flex-right">{element.children && (isOpen ? <icons.ChevronDown /> : <icons.ChevronRight />)}</div>
       </li>
       {element.children && isOpen && element.children.map((c, i) => <NavigationElement element={c} key={i} />)}
     </ul>
