@@ -45,10 +45,6 @@ nav.menu ul {
   margin: 0;
 }
 
-nav.menu ul > ul {
-  padding: 0 0 0 36px !important;
-}
-
 nav.menu ul > li {
   padding: 8px 16px;
   color: var(--transparent-fg-color);
@@ -62,6 +58,10 @@ nav.menu ul > li {
   align-items: center;
   justify-content: flex-start;
   gap: 12px;
+}
+
+nav.menu ul > ul > li {
+  padding-left: 52px;
 }
 
 nav.menu ul > li.active {

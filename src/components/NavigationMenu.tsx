@@ -6,6 +6,7 @@ type NavigationItem = {
   link?: string;
   children?: NavigationItem[];
   icon?: ReactElement;
+  active?: boolean;
 };
 
 const navigation: NavigationItem[] = [
@@ -28,7 +29,7 @@ const navigation: NavigationItem[] = [
     icon: <icons.TransferOut />,
     children: [
       { label: "Bills", link: `~/purchases/bills` },
-      { label: "Vendors", link: `~/purchases/vendors` },
+      { label: "Vendors", link: `~/purchases/vendors`, active: true },
       { label: "Products & Services", link: `~/purchases/products` }
     ]
   },
@@ -78,7 +79,7 @@ const NavigationElement: React.FC<{ element: NavigationItem }> = ({ element }) =
   const [isOpen, setIsOpen] = useState(false);
   return (
     <ul>
-      <li onClick={() => element.children && setIsOpen(!isOpen)}>
+      <li onClick={() => element.children && setIsOpen(!isOpen)} className={element.active ? "active" : ""}>
         {element.icon}
         {element.label}
         <div className="flex-right">{element.children && (isOpen ? <icons.ChevronDown /> : <icons.ChevronRight />)}</div>
